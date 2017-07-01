@@ -9,6 +9,8 @@ function test() {
     if(move==1){
       move=0;
       stopStopwatch();
+      $('.a').stop();
+      $('.a').finish();
     }else{
       move=1;
       reset();
