@@ -1,0 +1,28 @@
+<script type="text/javascript">
+  function loadXMLDoc() {
+    var xmlhttp = new XMLHttpRequest();
+    xmlhttp.onreadystatechange = function() {
+      if (xmlhttp.readyState == XMLHttpRequest.DONE ) {      
+       if (xmlhttp.status == 200) {
+           var json = JSON.parse(xmlhttp.responseText);
+           var content = json[0].data.children[0].data.preview.images[0].source.url;
+           content= '<img style="max-width:750px" src=\"'+content+'\">';
+
+           document.getElementById("myDiv").innerHTML = content;
+       }
+       else if (xmlhttp.status == 400) {
+        alert('There was an error 400');
+      }
+      else {
+       alert('something else other than 200 was returned');
+     }
+   }
+ };
+
+ xmlhttp.open("GET", "https://www.reddit.com/r/DickButt/random.json", true);
+ xmlhttp.send();
+}
+loadXMLDoc();
+</script>
+
+<div><div id="myDiv" style="margin-left:auto;margin-right:auto;color:#337ab7;">Loading...</div></div>
