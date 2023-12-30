@@ -1,6 +1,6 @@
 $(document).ready(function() {
     animateDiv();
-    spectrum();
+    // spectrum();
 
 });
 var move = 1;

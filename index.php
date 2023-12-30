@@ -8,17 +8,18 @@ if (session_status() == PHP_SESSION_NONE) {
 <html xmlns="http://www.w3.org/1999/xhtml"
     xmlns:fb="http://ogp.me/ns/fb#">
 <head>
-	<meta property="og:image" content="dickbutt.jpg" />
-    <script async="" src="https://www.google-analytics.com/analytics.js"></script><script>
-      (function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
-      (i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
-      m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
-      })(window,document,'script','https://www.google-analytics.com/analytics.js','ga');
+	<meta property="og:image" content="dickbutt.jpg" />    
 
-      ga('create', 'UA-78361957-1', 'auto');
-      ga('send', 'pageview');
+<!-- Google tag (gtag.js) -->
+<script async src="https://www.googletagmanager.com/gtag/js?id=UA-78361957-1"></script>
+<script>
+  window.dataLayer = window.dataLayer || [];
+  function gtag(){dataLayer.push(arguments);}
+  gtag('js', new Date());
 
-    </script>
+  gtag('config', 'UA-78361957-1');
+</script>
+
 
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script>
     <!--=========================================== bootstrap  =================================================-->
@@ -69,9 +70,9 @@ function cheeckyCunt(){
     <br>
       <a href="?" title="Home">Home / Game</a> |
       <a href="?page=hypnotic.html" title="Hypnotic dickbutt">Hypnotic dickbutt</a> |
-      <a href="?page=largedickbutt.html" title="ASCII dickbutt">ASCII dickbutt</a> |
-      <a href="?page=random.html" title="Random dickbutt">Random dickbutt</a>
-      <a class="pull-right" href="mailto:admin@dickbutt.nl">Contact</a>
+      <a href="?page=largedickbutt.html" title="ASCII dickbutt">ASCII dickbutt</a> 
+      
+      <!-- |<a href="?page=random.html" title="Random dickbutt">Random dickbutt</a>       -->
     </nav>
   </header>
   <br>
